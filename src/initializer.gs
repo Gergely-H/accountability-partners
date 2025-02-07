@@ -18,4 +18,5 @@ const initializeSheetAndTriggers = () => {
   addTimezoneSelectorConfig();
   updateDailyTrigger();
   createOnEditTriggerForTimezoneConfig();
+  setDate();
 };
