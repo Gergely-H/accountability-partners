@@ -450,6 +450,7 @@ const initializeSheetAndTriggers = () => {
   addTimezoneSelectorConfig();
   updateDailyTrigger();
   createOnEditTriggerForTimezoneConfig();
+  setDate();
 };
 
 const SPREADSHEET_ID = "SPREADSHEET_ID";
