@@ -443,13 +443,14 @@ const addTimezoneSelectorConfig = () => {
 
   configCell.setDataValidation(rule);
 
-  configCell.setValue(DEFAULT_TIMEZONE)
+  configCell.setValue(DEFAULT_TIMEZONE);
 };
 
 const initializeSheetAndTriggers = () => {
   addTimezoneSelectorConfig();
   updateDailyTrigger();
-}
+  createOnEditTriggerForTimezoneConfig();
+};
 
 const SPREADSHEET_ID = "SPREADSHEET_ID";
 const SHEET_TAB_NAME = "SHEET_TAB_NAME";
